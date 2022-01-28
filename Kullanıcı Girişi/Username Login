@@ -1,0 +1,18 @@
+i=3
+
+while True:
+    kullanici_adi = input("Lütfen kullanıcı adınızı giriniz: ")
+    parola = input("Lütfen parolanızı giriniz: ")
+
+    if (kullanici_adi== 'ezgisko' and parola=='ezgi1234'):
+        print("Uygulamaya hoşgeldiniz.")
+        break
+    elif (not kullanici_adi == 'ezgisko' and parola=='ezgi1234'):
+        print("Kullanıcı adını yanlış girdiniz.Lütfen tekrar deneyiniz.")
+        i-=1
+    elif (kullanici_adi== 'ezgisko' and not parola=='ezgi1234'):
+        print("Parolayı yanlış girdiniz. Lütfen tekrar deneyiniz.")
+        i-=1
+    else:
+        print("Kullanıcı adını ve parolayı yanlış girdiniz. Lütfen tkerar deneyiniz.")
+        i-=1
