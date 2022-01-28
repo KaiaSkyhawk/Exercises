@@ -1,0 +1,16 @@
+print("Hesap Makinesine Hoşgeldiniz.")
+
+n1=int(input("Please enter the first number: "))
+n2=int(input("Please enter the second number: "))
+process= input("Please choose your process: ")
+
+if process =='+':
+    print(n1+n2)
+elif process == '-':
+    print(n1-n2)
+elif process == '*':
+    print(n1*n2)
+elif process == '/':
+    print(n1/n2)
+else:
+    print("Your process can not work.")
